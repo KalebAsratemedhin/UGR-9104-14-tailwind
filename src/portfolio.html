@@ -25,19 +25,29 @@
                 <h1>My Projects</h1>
                 <article>
                     <h2>Efoyta Doctor's Appointment Booking Application </h2>
-                    <p>This is a group project I did in my third year at AAiT for my Fundamentals of Software Engineering course final project. It was a web application for hospitals and patients to manage appointments online. The web application enables patients to book appointments with the doctor of their choice at their preferred time. We made it in the hope of minimizing patient waiting time at hospitals and bettering the patient experience at hospitals. Doctors also benefit from the app as they can manage their daily visitors.</p>
+                    <p>Progress:100% <br>
+                        <progress  max="100" value="100" > 100% </progress> 
+                    </p>
+                    
+                    <p>This is a group project I did in my third year at <abbr title="Addis Ababa Institute of Technology">AAiT</abbr> for my Fundamentals of Software Engineering course final project. It was a web application for hospitals and patients to manage appointments online. The web application enables patients to book appointments with the doctor of their choice at their preferred time. We made it in the hope of minimizing patient waiting time at hospitals and bettering the patient experience at hospitals. Doctors also benefit from the app as they can manage their daily visitors.</p>
                     <p>I had the role of managing and leading our team during this project. As such I participated at every stage of the developement process starting from requirement specification and proposal up to the deployment and final testing. In this project I was able to work with: Biniyam Assefa, Yohannes, Meklit Asrat, Isam and Daniel Demerew.
                     </p>
                 </article>
                 <article>
                     <h2>Spring 3D animation short film - New Edition</h2>
-                    <p>My friend Ben J. Lee and I have had the absolute pleasure of rescoring this fantastic short film courtesy of Blender Animation Studio. A heart felt gratitude to them for distributing this film under the Creative Commons copyright, allowing composers like us to create their own music perspective for the film.</p>
+                    <p>Progress:100% <br>
+                        <progress  max="100" value="100" > 100% </progress> 
+                    </p>
+                    <p>My friend Ben J. Lee and I have had the absolute pleasure of rescoring this fantastic short film courtesy of <em>Blender Animation Studio</em>. A heart felt gratitude to them for distributing this film under the Creative Commons copyright, allowing composers like us to create their own music perspective for the film.</p>
                     <p>Spring is the story of a shepherd girl and her dog, who face ancient spirits in order to continue the cycle of life. This poetic and visually stunning short film was written and directed by Andy Goralczyk, inspired by his childhood in the mountains of Germany.</p>
                     <p>Spring is a 2019 animated fantasy short film written and directed by Andreas Goralczyk and produced by Ton Roosendaal and Francesco Siddi. It is the Blender Institute's 12th "open movie", and was made utilizing the open-source software, Blender. The film is about a young shepherd and her dog confronting ancient spirits in order to bring about the change of seasons. The film was funded by the Blender Foundation, with donations from the Blender community. The film and any material made in the studio was released under a Creative Commons License. On April 4, 2019, the film was first released on YouTube. As of December 2020, it had over 7 million views.</p>
                     <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA">to the video.</a>
                 </article>
                 <article>
                     <h2>Micro-mouse and Maze Solving Algorithm</h2>
+                    <p>Progress:100% <br>
+                        <progress max="100" value="100" > 100% </progress> 
+                    </p>
                     <p>In the summer of 2023, I saw a video on youtube about the fastest maze solving micro mouse competition. The competition is a worldwide event and is most popular in the UK, U.S., Japan, Singapore, India, South Korea and becoming popular in subcontinent countries such as Sri Lanka. After watching the video, I was convinced that I had to try it out and then I did. For the next two months, I was toiling to make my very own micro-mouse robot and write the maze solving algorithm. I finally did!</p>
                     <p>Micromouse is a small robotic mouse competing to solve a 16×16 maze. The maze is made up of a 16×16 grid of cells, each 180 mm square with walls 50 mm high. The mice are completely autonomous robots that use infrared sensors to locate and must find their way from a predetermined starting position to the central area of the maze unaided. The mouse needs to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the goal. Having reached the goal, the mouse will typically perform additional searches of the maze until it has found an optimal route from the start to the finish. Once the optimal route has been found, the mouse will traverse that route in the shortest achievable time.</p>
                     <p>Micro-mouse is a challenge of both the hardware and algorithm design. For the maze solving algorithm I used a simple depth-first search (DFS). To apply DFS we first transform our maze into a graph. Individual paths become edges and junctions become nodes. The mouse will start at the top node and work its way down until the exit node. By convention, whenever the mouse faces a choice,it goes to the left. If it runs into a dead end, it backtracks up until a new path opens up to the right. In the best case scenario, our exit node is at the bottom left. In the worst case, the node is at the bottom right and the entire graph will be visited. This could take a long time if the maze is big! DFS is a simple algorithm and it doesn’t take up a lot of space in memory.</p>
@@ -51,6 +61,41 @@
                         <li>DC-DC Converter - Hitachi FPMR12TR7508NA</li>
                     </ul>
 
+                </article>
+                <article>
+                    <h2>Fake News Detector AI-System </h2>
+                    <p>Progress:10% <br>
+                        <progress max="100" value="10" > 10% </progress> 
+                    </p>
+                    <p>This project involves natural language processing (NLP), machine learning, and data preprocessing techniques.Collect a dataset of news articles labeled as either "fake" or "real." Several datasets are available online, such as the FakeNewsNet dataset or the LIAR-PLUS dataset.</p>
+
+                        
+                    <p>The software will perform text preprocessing tasks, including lowercasing, tokenization, and removing stop words and punctuation. Use techniques like stemming or lemmatization to normalize words. It will also convert the text data into numerical features that can be used by machine learning models using TF-IDF (Term Frequency-Inverse Document Frequency) and word embeddings (Word2Vec, GloVe).</p>
+
+                    <p>I will use a machine learning model suitable for text classification from the common models such as:</p>
+                        <dl>
+                            <dt>Naive Bayes</dt>
+                            <dd>Simple and effective for text classification tasks</dd>
+                            <dt>Logistic Regression</dt>
+                            <dd>Widely used for binary classification.</dd>
+                            <dt>Support Vector Machines (SVM)</dt>
+                            <dd>Effective in high-dimensional spaces.</dd>
+                        </dl>
+                    
+                    <p>The specific technologies I will use include:</p>
+                        <dl>
+                            <dt>Python</dt>
+                            <dd>The primary programming language for machine learning and data processing</dd>
+                            <dt>Scikit-Learn</dt>
+                            <dd>A powerful library for machine learning in Python.</dd>
+                            <dt>NLTK (Natural Language Toolkit)</dt>
+                            <dd>Provides tools for working with human language data.</dd>
+                            <dt>TensorFlow or PyTorch</dt>
+                            <dd>Deep learning frameworks for building and training neural network models.</dd>
+                            <dt>Flask or Django</dt>
+                            <dd>Web frameworks for creating a user-friendly interface.</dd>
+                        </dl>
+                    
                 </article>
 
                 <figure>
@@ -74,11 +119,11 @@
         </main>
         <footer>
             <hr>
-              <a href="https://twitter.com/risekab"><img src="images/twitter-x.jpg" alt="twitter logo" width="50" height="50"></a>
-              <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram-logo.jpg" alt="instagram logo" width="50" height="50"></a>
-              <a href="https://t.me/Thequantumduck"><img src="images/telegram-logo.jpg" alt="telegram logo" width="50" height="50"></a>
-              <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linked-in-logo.jpg" alt="linked in logo" width="50" height="50"></a>
-      
+            <a href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
+            <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
+            <a href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
+            <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
+              <p>copyright &copy; all rights reserved.</p>
               <address>
                 Author: Kaleb Asratemedhin <br>
                 Address: Addis Ababa, Ethiopia <br>
