@@ -2,71 +2,97 @@
 <html lang = "en">
     <head>
         <meta lang="en-us" charset="utf-8">
-        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/output.css">
     </head>
     <body>
-        <header>
-            <img src="images/my_logo.PNG" alt="logo" width="50" height="50">
-          <nav>
-            <a href="contact.html">Contact</a>
-            <button class="menu-button"><img src="images/menu.png" alt="menu logo" width="30" height="30"></button>
-            <div class="menu-content">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>          
-                </ul>
+      <header class="bg-amber-600 flex justify-between items-center max-h-14 md:justify-around max-w-full">
+        <div>
+            <img class="header__logo ml-10  md:ml-0 rounded-full " src="images/my_logo.PNG" alt="logo" width="50" height="50">      
+        </div>
+        <nav class="header__nav flex  p-5 justify-between items-center relative min-w-0.5 md:m-w-48 md:max-w-64 md:justify-end">
+            <div>
+                <a class=" hover:text-sky-700 text-white  font-bold" href="contact.html">Contact</a>
             </div>
-          </nav>
-        </header>
-        <main>
-          <h1>Contact me</h1>
-          <section>
-            <h2>Location</h2>
-          <address>
+            <div class="header__menu cursor-pointer relative flex justify-between pl-2 md:min-w-64">
+                <div class="header__menu-hamburger  md:hidden block mr-10">
+                    <img class="header__menu-button-icon" src="images/menu.png" alt="menu logo" width="30" height="30">
+                </div>
+                <div class="header__menu-content md:relative md:bg-amber-600 md:w-2/3 bg-white md:block absolute top-9 md:top-0">
+                    <ul class="header__menu-content-list hidden md:flex  md:w-2/3 md:justify-between md:gap-8 leading-10 p-2 right-50">
+                      <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="index.html">Home</a></li>
+                      <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="about.html">About</a></li>
+                      <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="portfolio.html">Portfolio</a></li>
+                      <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="blog.html">Blog</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="contact-main bg-slate-300 p-3 ">
+      <h1 class="text-3xl">Contact me</h1>
+      <section class="contact-main__location p-8 md:flex md:justify-evenly gap-4">
+        <div class="contact-main__location-address ">
+          <h2 class="text-3xl">Location</h2>
+          <address class="leading-loose">
             <p>Country: Ethiopia</p>
             <p>City: Addis Ababa</p>
             <p>Subcity: Gulele</p>
             <p>Street: Algeria st.</p>
             <p>Building: Addis Ababa University 6 Kilo Campus</p>
           </address>
-            <h3>Do you need a map?</h3>
+        </div>
+        <div class="contact-main__location-map">
+          <h3>Do you need a map?</h3>
+          <iframe class="w-4/5  md:w-full h-96 " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31374.23891274205!2d38.749191241457574!3d9.044389829794438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8fcdfd73345d%3A0x71d655e4e7c6c79e!2zQUEgVW5pdmVyc2l0eSA2IEtpbG8gQ2FtcHVzIHwg4YqgLuGKoCDhi6nhipLhiajhiK3hiLLhibIgNiDhiqrhiI4g4Yqr4Yid4Y2T4Yi1!5e0!3m2!1sen!2set!4v1700983219781!5m2!1sen!2set" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <section class="contact-main__social md:flex md:justify-between  p-3 m-3 ">
+        <div class="contact-main__social-media">
+          <h2 class="text-3xl">Social Media</h2>
+          <p>Feel free to reach me via the following.</p>
+          <ul class="gap-4 grid m-3" >
+            <li class="flex"><img src="images/gmail.png" alt="gmail logo" width="50" height="50">&nbsp;<a class="text-blue-800 hover:text-orange-700 " href="mailto:risekab@gmail.com">Email</a></li>
+            <li class="flex"><img src="images/telegram.png" alt="telegram logo" width="50" height="50">&nbsp;<a class="text-blue-800 hover:text-orange-700 " href="https://t.me/Thequantumduck">Telegram</a></li>
+            <li class="flex"><img src="images/twitter.png" alt="twitter logo" width="50" height="50">&nbsp;<a class="text-blue-800 hover:text-orange-700 " href="https://twitter.com/risekab">Twitter</a></li>
+            <li class="flex"><img src="images/instagram.png" alt="instagram logo" width="50" height="50">&nbsp;<a class="text-blue-800 hover:text-orange-700 " href="https://instagram.com/daffytribbiani/">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="contact-main__hire">
+          <h3 class="text-2xl">You want to hire me? These are for you.</h3>
+          <ul class="gap-4 grid m-3">
+            <li class="flex"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50">&nbsp;<a class="text-blue-800 hover:text-orange-700 " href="https://linkedin.com/in/kaleb-asratemedhin-81748625b">Linked in</a></li>
+            <li class="flex"><img src="images/github.png" alt="github logo" width="50" height="50">&nbsp;<a class="text-blue-800 hover:text-orange-700 " href="https://github.com/KalebAsratemedhin">Github</a></li>
+            <li class="flex"><img src="images/leetcode.png" alt="leetcode logo" width="50" height="50">&nbsp;<a class="text-blue-800 hover:text-orange-700 " href="https://leetcode.com/4ureyes/">Leetcode</a></li>
+            
+          </ul>
+          <a class="text-blue-800 hover:text-orange-700"  href="other_resources/final-cv.pdf" download="button">Download cv</a>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31374.23891274205!2d38.749191241457574!3d9.044389829794438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8fcdfd73345d%3A0x71d655e4e7c6c79e!2zQUEgVW5pdmVyc2l0eSA2IEtpbG8gQ2FtcHVzIHwg4YqgLuGKoCDhi6nhipLhiajhiK3hiLLhibIgNiDhiqrhiI4g4Yqr4Yid4Y2T4Yi1!5e0!3m2!1sen!2set!4v1700983219781!5m2!1sen!2set" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
-          <section>
-            <h2>Social Media</h2>
-            <p>Feel free to reach me via the following.</p>
-            <ul>
-              <li><img src="images/gmail.png" alt="gmail logo" width="50" height="50">&nbsp;<a href="mailto:risekab@gmail.com">Email</a></li>
-              <li><img src="images/telegram.png" alt="telegram logo" width="50" height="50">&nbsp;<a href="https://t.me/Thequantumduck">Telegram</a></li>
-              <li><img src="images/twitter.png" alt="twitter logo" width="50" height="50">&nbsp;<a href="https://twitter.com/risekab">Twitter</a></li>
-              <li><img src="images/instagram.png" alt="instagram logo" width="50" height="50">&nbsp;<a href="https://instagram.com/daffytribbiani/">Instagram</a></li>
-            </ul>
-            <h3>You want to hire me? These are for you.</h3>
-            <ul>
-              <li><img src="images/linkedin.png" alt="linked in logo" width="50" height="50">&nbsp;<a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b">Linked in</a></li>
-              <li><img src="images/github.png" alt="github logo" width="50" height="50">&nbsp;<a href="https://github.com/KalebAsratemedhin">Github</a></li>
-              <li><img src="images/leetcode.png" alt="leetcode logo" width="50" height="50">&nbsp;<a href="https://leetcode.com/4ureyes/">Leetcode</a></li>
-              
-            </ul>
-            <a href="other_resources/final-cv.pdf" download="button">Download cv</a>
-          </section>
-        </main>
-        <footer>
-            <hr>
-              <a href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
-              <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
-              <a href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
-              <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
-              <p>copyright &copy; all rights reserved.</p>
-              <address>
-                Author: Kaleb Asratemedhin <br>
-                Address: Addis Ababa, Ethiopia <br>
-                Telephone: +251996304541 <br>
-             </address>
-             <a href="contact.html">back to top</a>
+        </div>
+      </section>
+    </main>
+        <footer class="footer p-3 bg-black text-white text-1xl">
+          <div class="footer__back-to-top">
+              <a class="footer__back-to-top-link text-blue-700 hover:text-white" href="contact.html">back to top</a>
+          </div>
+          <div class="footer__contact flex  md:flex md:gap-12 md:justify-around flex-wrap  gap-6 items-center justify-between">
+            <div class="footer__contact-links  md:flex max-w-48 grid grid-cols-2 justify-around gap-7">
+              <a class="footer__contact-link" href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
+              <a class="footer__contact-link" href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
+              <a class="footer__contact-link" href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
+              <a class="footer__contact-link" href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
+            </div>
+    
+            <p>&copy; all rights reserved.</p>
+    
+            <address class="footer__contact-address leading-10">
+              Author: Kaleb Asratemedhin <br>
+              Address: Addis Ababa, Ethiopia <br>
+              Telephone: +251996304541 <br>
+           </address>
+          </div>
+          <script src="JS/script.js"></script>
         </footer>
     </body>
 </html>

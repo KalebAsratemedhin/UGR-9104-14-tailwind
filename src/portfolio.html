@@ -2,134 +2,191 @@
 <html lang = "en">
     <head>
         <meta lang="en-us" charset="utf-8">
-        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="css/output.css">
     </head>
     <body>
-        <header>
-            <img src="images/my_logo.PNG" alt="logo" width="50" height="50">
-          <nav>
-            <a href="portfolio.html">Portfolio</a>
-            <button class="menu-button"><img src="images/menu.png" alt="menu logo" width="30" height="30"></button>
-            <div class="menu-content">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>          
-                </ul>
+        <header class="bg-amber-600 flex justify-between items-center max-h-14 md:justify-around max-w-full">
+            <div>
+                <img class="header__logo ml-10  md:ml-0 rounded-full " src="images/my_logo.PNG" alt="logo" width="50" height="50">      
             </div>
-          </nav>
+            <nav class="header__nav flex  p-5 justify-between items-center relative min-w-0.5 md:m-w-48 md:max-w-64 md:justify-end">
+                <div>
+                    <a class=" hover:text-sky-700 text-white  font-bold" href="Portfolio.html">Portfolio</a>
+                </div>
+                <div class="header__menu cursor-pointer relative flex justify-between pl-2 md:min-w-64">
+                    <div class="header__menu-hamburger  md:hidden block mr-10">
+                        <img class="header__menu-button-icon" src="images/menu.png" alt="menu logo" width="30" height="30">
+                    </div>
+                    <div class="header__menu-content md:relative md:bg-amber-600 md:w-2/3 bg-white md:block absolute top-9 md:top-0">
+                        <ul class="header__menu-content-list hidden md:flex  md:w-2/3 md:justify-between md:gap-8 leading-10 p-2 right-50">
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="index.html">Home</a></li>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="about.html">About</a></li>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="blog.html">Blog</a></li>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="contact.html">Contact</a></li>  
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
-            <section>
-                <h1>My Projects</h1>
-                <article>
-                    <h2>Efoyta Doctor's Appointment Booking Application </h2>
-                    <p>Progress:100% <br>
-                        <progress  max="100" value="100" > 100% </progress> 
-                    </p>
-                    
-                    <p>This is a group project I did in my third year at <abbr title="Addis Ababa Institute of Technology">AAiT</abbr> for my Fundamentals of Software Engineering course final project. It was a web application for hospitals and patients to manage appointments online. The web application enables patients to book appointments with the doctor of their choice at their preferred time. We made it in the hope of minimizing patient waiting time at hospitals and bettering the patient experience at hospitals. Doctors also benefit from the app as they can manage their daily visitors.</p>
-                    <p>I had the role of managing and leading our team during this project. As such I participated at every stage of the developement process starting from requirement specification and proposal up to the deployment and final testing. In this project I was able to work with: Biniyam Assefa, Yohannes, Meklit Asrat, Isam and Daniel Demerew.
-                    </p>
-                </article>
-                <article>
-                    <h2>Spring 3D animation short film - New Edition</h2>
-                    <p>Progress:100% <br>
-                        <progress  max="100" value="100" > 100% </progress> 
-                    </p>
-                    <p>My friend Ben J. Lee and I have had the absolute pleasure of rescoring this fantastic short film courtesy of <em>Blender Animation Studio</em>. A heart felt gratitude to them for distributing this film under the Creative Commons copyright, allowing composers like us to create their own music perspective for the film.</p>
-                    <p>Spring is the story of a shepherd girl and her dog, who face ancient spirits in order to continue the cycle of life. This poetic and visually stunning short film was written and directed by Andy Goralczyk, inspired by his childhood in the mountains of Germany.</p>
-                    <p>Spring is a 2019 animated fantasy short film written and directed by Andreas Goralczyk and produced by Ton Roosendaal and Francesco Siddi. It is the Blender Institute's 12th "open movie", and was made utilizing the open-source software, Blender. The film is about a young shepherd and her dog confronting ancient spirits in order to bring about the change of seasons. The film was funded by the Blender Foundation, with donations from the Blender community. The film and any material made in the studio was released under a Creative Commons License. On April 4, 2019, the film was first released on YouTube. As of December 2020, it had over 7 million views.</p>
-                    <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA">to the video.</a>
-                </article>
-                <article>
-                    <h2>Micro-mouse and Maze Solving Algorithm</h2>
-                    <p>Progress:100% <br>
-                        <progress max="100" value="100" > 100% </progress> 
-                    </p>
-                    <p>In the summer of 2023, I saw a video on youtube about the fastest maze solving micro mouse competition. The competition is a worldwide event and is most popular in the UK, U.S., Japan, Singapore, India, South Korea and becoming popular in subcontinent countries such as Sri Lanka. After watching the video, I was convinced that I had to try it out and then I did. For the next two months, I was toiling to make my very own micro-mouse robot and write the maze solving algorithm. I finally did!</p>
-                    <p>Micromouse is a small robotic mouse competing to solve a 16×16 maze. The maze is made up of a 16×16 grid of cells, each 180 mm square with walls 50 mm high. The mice are completely autonomous robots that use infrared sensors to locate and must find their way from a predetermined starting position to the central area of the maze unaided. The mouse needs to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the goal. Having reached the goal, the mouse will typically perform additional searches of the maze until it has found an optimal route from the start to the finish. Once the optimal route has been found, the mouse will traverse that route in the shortest achievable time.</p>
-                    <p>Micro-mouse is a challenge of both the hardware and algorithm design. For the maze solving algorithm I used a simple depth-first search (DFS). To apply DFS we first transform our maze into a graph. Individual paths become edges and junctions become nodes. The mouse will start at the top node and work its way down until the exit node. By convention, whenever the mouse faces a choice,it goes to the left. If it runs into a dead end, it backtracks up until a new path opens up to the right. In the best case scenario, our exit node is at the bottom left. In the worst case, the node is at the bottom right and the entire graph will be visited. This could take a long time if the maze is big! DFS is a simple algorithm and it doesn’t take up a lot of space in memory.</p>
-                    <p>For the hardware part, I used the following</p>
-                    <ul>
-                        <li>IR Sensors - Sharp GP2D120 </li>
-                        <li>Microcontroller - Freescale MC9S12C128</li>
-                        <li>Microcontroller module board - EVBPlus DragonFly12</li>
-                        <li>Stepper Motors - Shinano Kenshi SST39D1010</li>
-                        <li>Power Transistors for motors - Fairchild FDB6030BL</li>
-                        <li>DC-DC Converter - Hitachi FPMR12TR7508NA</li>
-                    </ul>
-
-                </article>
-                <article>
-                    <h2>Fake News Detector AI-System </h2>
-                    <p>Progress:10% <br>
-                        <progress max="100" value="10" > 10% </progress> 
-                    </p>
-                    <p>This project involves natural language processing (NLP), machine learning, and data preprocessing techniques.Collect a dataset of news articles labeled as either "fake" or "real." Several datasets are available online, such as the FakeNewsNet dataset or the LIAR-PLUS dataset.</p>
-
+        <main class="portfolio-main bg-orange-200">
+            <section class="portfolio-main__projects bg-slate-400 m-2 p-4 justify-center">
+                <h1 class="text-4xl">My Projects</h1>
+                <div class="portfolio-main__projects-list md:grid md:grid-cols-2">     
+                    <article class="portfolio-main__project-card bg-slate-400 m-2 p-4 justify-center">
+                        <div class="portfolio-main__project-header p-5 bg-gray-300  ">
+                            <h2 class="text-3xl">Efoyta Doctor's Appointment Booking Application </h2>
+                            <p>Progress:100% <br>
+                                <progress class="w-3/4"  max="100" value="100" > 100% </progress> 
+                            </p>
+                        </div>
                         
-                    <p>The software will perform text preprocessing tasks, including lowercasing, tokenization, and removing stop words and punctuation. Use techniques like stemming or lemmatization to normalize words. It will also convert the text data into numerical features that can be used by machine learning models using TF-IDF (Term Frequency-Inverse Document Frequency) and word embeddings (Word2Vec, GloVe).</p>
+                        <p>This is a group project I did in my third year at <abbr title="Addis Ababa Institute of Technology">AAiT</abbr> for my Fundamentals of Software Engineering course final project. It was a web application for hospitals and patients to manage appointments online. The web application enables patients to book appointments with the doctor of their choice at their preferred time. We made it in the hope of minimizing patient waiting time at hospitals and bettering the patient experience at hospitals. Doctors also benefit from the app as they can manage their daily visitors.</p>
+                        <p>I had the role of managing and leading our team during this project. As such I participated at every stage of the developement process starting from requirement specification and proposal up to the deployment and final testing. In this project I was able to work with: Biniyam Assefa, Yohannes, Meklit Asrat, Isam and Daniel Demerew.
+                        </p>
+                    </article>
+                    <article class="portfolio-main__project-card bg-slate-400 m-2 p-4">
+                        <div class="portfolio-main__project-header p-5 bg-gray-300">
+                            <h2 class="text-3xl">Spring 3D animation short film - New Edition</h2>
+                            <p>Progress:100% <br>
+                                <progress class="w-3/4" max="100" value="100" > 100% </progress> 
+                            </p>
+                        </div>
+                        <p>My friend Ben J. Lee and I have had the absolute pleasure of rescoring this fantastic short film courtesy of <em>Blender Animation Studio</em>. A heart felt gratitude to them for distributing this film under the Creative Commons copyright, allowing composers like us to create their own music perspective for the film.</p>
+                        <p>Spring is the story of a shepherd girl and her dog, who face ancient spirits in order to continue the cycle of life. This poetic and visually stunning short film was written and directed by Andy Goralczyk, inspired by his childhood in the mountains of Germany.</p>
+                        <p>Spring is a 2019 animated fantasy short film written and directed by Andreas Goralczyk and produced by Ton Roosendaal and Francesco Siddi. It is the Blender Institute's 12th "open movie", and was made utilizing the open-source software, Blender. The film is about a young shepherd and her dog confronting ancient spirits in order to bring about the change of seasons. The film was funded by the Blender Foundation, with donations from the Blender community. The film and any material made in the studio was released under a Creative Commons License. On April 4, 2019, the film was first released on YouTube. As of December 2020, it had over 7 million views.</p>
+                        <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA">to the video.</a>
+                    </article>
+                    <article class="portfolio-main__project-card bg-slate-400 m-2 p-4">
+                        <div class="portfolio-main__project-header p-5 bg-gray-300">
+                            <h2 class="text-3xl">Micro-mouse and Maze Solving Algorithm</h2>
+                            <p>Progress:100% <br>
+                                <progress class="w-3/4" max="100" value="100" > 100% </progress> 
+                            </p>
+                        </div>
+                        <p>In the summer of 2023, I saw a video on youtube about the fastest maze solving micro mouse competition. The competition is a worldwide event and is most popular in the UK, U.S., Japan, Singapore, India, South Korea and becoming popular in subcontinent countries such as Sri Lanka. After watching the video, I was convinced that I had to try it out and then I did. For the next two months, I was toiling to make my very own micro-mouse robot and write the maze solving algorithm. I finally did!</p>
+                        <p>Micromouse is a small robotic mouse competing to solve a 16×16 maze. The maze is made up of a 16×16 grid of cells, each 180 mm square with walls 50 mm high. The mice are completely autonomous robots that use infrared sensors to locate and must find their way from a predetermined starting position to the central area of the maze unaided. The mouse needs to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the goal. Having reached the goal, the mouse will typically perform additional searches of the maze until it has found an optimal route from the start to the finish. Once the optimal route has been found, the mouse will traverse that route in the shortest achievable time.</p>
+                        <p>Micro-mouse is a challenge of both the hardware and algorithm design. For the maze solving algorithm I used a simple depth-first search (DFS). To apply DFS we first transform our maze into a graph. Individual paths become edges and junctions become nodes. The mouse will start at the top node and work its way down until the exit node. By convention, whenever the mouse faces a choice,it goes to the left. If it runs into a dead end, it backtracks up until a new path opens up to the right. In the best case scenario, our exit node is at the bottom left. In the worst case, the node is at the bottom right and the entire graph will be visited. This could take a long time if the maze is big! DFS is a simple algorithm and it doesn’t take up a lot of space in memory.</p>
+                        <p>For the hardware part, I used the following</p>
+                        <ul>
+                            <li>IR Sensors - Sharp GP2D120 </li>
+                            <li>Microcontroller - Freescale MC9S12C128</li>
+                            <li>Microcontroller module board - EVBPlus DragonFly12</li>
+                            <li>Stepper Motors - Shinano Kenshi SST39D1010</li>
+                            <li>Power Transistors for motors - Fairchild FDB6030BL</li>
+                            <li>DC-DC Converter - Hitachi FPMR12TR7508NA</li>
+                        </ul>
 
-                    <p>I will use a machine learning model suitable for text classification from the common models such as:</p>
-                        <dl>
-                            <dt>Naive Bayes</dt>
-                            <dd>Simple and effective for text classification tasks</dd>
-                            <dt>Logistic Regression</dt>
-                            <dd>Widely used for binary classification.</dd>
-                            <dt>Support Vector Machines (SVM)</dt>
-                            <dd>Effective in high-dimensional spaces.</dd>
-                        </dl>
-                    
-                    <p>The specific technologies I will use include:</p>
-                        <dl>
-                            <dt>Python</dt>
-                            <dd>The primary programming language for machine learning and data processing</dd>
-                            <dt>Scikit-Learn</dt>
-                            <dd>A powerful library for machine learning in Python.</dd>
-                            <dt>NLTK (Natural Language Toolkit)</dt>
-                            <dd>Provides tools for working with human language data.</dd>
-                            <dt>TensorFlow or PyTorch</dt>
-                            <dd>Deep learning frameworks for building and training neural network models.</dd>
-                            <dt>Flask or Django</dt>
-                            <dd>Web frameworks for creating a user-friendly interface.</dd>
-                        </dl>
-                    
-                </article>
+                    </article>
+                    <article class="portfolio-main__project-card  bg-slate-400 m-2 p-4">
+                        <div class="portfolio-main__project-header p-5 bg-gray-300">
+                            <h2 class="text-3xl">Fake News Detector AI-System </h2>
+                            <p>Progress:10% <br>
+                                <progress class="w-3/4" max="100" value="10" > 10% </progress> 
+                            </p>
+                        </div>
+                        <p>This project involves natural language processing (NLP), machine learning, and data preprocessing techniques.Collect a dataset of news articles labeled as either "fake" or "real." Several datasets are available online, such as the FakeNewsNet dataset or the LIAR-PLUS dataset.</p>
 
-                <figure>
-                    <h3>Footage of my projects</h3>
-                    <img src="images/Spring-Blender-Open-Movie-2020.jpg" alt="Spring short movie" width="300" height="300">
-                    <img src="images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
-                    <img src="images/Spring-Le-superb-OpenSource.jpg" alt="Spring short movie" width="300" height="300">
-                    <figcaption>Spring short animated movie</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/Efoyta-doc-side.PNG" alt="Efoyta website doctor's view" width="500" height="400">
-                    <img src="images/Efoyta-home-page.PNG" alt="Efoyta website home page" width="500" height="400">
-                    <figcaption>Efoyta Doctor's Appointment Booking Web Application</figcaption>
-                </figure>
-                <figure>  
-                    <img src="images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
-                    <img src="images/maze.jpg" alt="maze for micro-mouse" width="300" height="300">
-                    <figcaption>Micro-mouse and maze</figcaption>
-                </figure>
+                            
+                        <p>The software will perform text preprocessing tasks, including lowercasing, tokenization, and removing stop words and punctuation. Use techniques like stemming or lemmatization to normalize words. It will also convert the text data into numerical features that can be used by machine learning models using TF-IDF (Term Frequency-Inverse Document Frequency) and word embeddings (Word2Vec, GloVe).</p>
+
+                        <p>I will use a machine learning model suitable for text classification from the common models such as:</p>
+                            <dl class="portfolio-main__dl bg-slate-500 p-8">
+                                <dt>Naive Bayes</dt>
+                                <dd>Simple and effective for text classification tasks</dd>
+                                <dt>Logistic Regression</dt>
+                                <dd>Widely used for binary classification.</dd>
+                                <dt>Support Vector Machines (SVM)</dt>
+                                <dd>Effective in high-dimensional spaces.</dd>
+                            </dl>
+                        
+                        <p>The specific technologies I will use include:</p>
+                            <dl class="portfolio-main__dl bg-slate-500 p-8">
+                                <dt>Python</dt>
+                                <dd>The primary programming language for machine learning and data processing</dd>
+                                <dt>Scikit-Learn</dt>
+                                <dd>A powerful library for machine learning in Python.</dd>
+                                <dt>NLTK (Natural Language Toolkit)</dt>
+                                <dd>Provides tools for working with human language data.</dd>
+                                <dt>TensorFlow or PyTorch</dt>
+                                <dd>Deep learning frameworks for building and training neural network models.</dd>
+                                <dt>Flask or Django</dt>
+                                <dd>Web frameworks for creating a user-friendly interface.</dd>
+                            </dl>
+                        
+                    </article>
+                </div>
+                <div class="portfolio-main__footage h-auto ">
+                    <h3 class="text-4xl">Footage of my projects</h3>
+                    <div class="portfolio-main__slider my-auto mx-auto w-3/5  h-96 relative">
+                        <div class="portfolio-main__slider-button portfolio-main__slider-button--prev is-hidden absolute left-0 top-1/2 translate-y-1/2 cursor-pointer">
+                            <img src="images/prev.png" alt="previous arrow image" width="50">
+                        </div>
+                        <div class="portfolio-main__slides w-full  h-full relative overflow-hidden">
+                            <div class="portfolio-main__track h-full relative transition-transform ">
+                                <div class="portfolio-main__slide w-full absolute current-slide">
+                                    <img class="w-full h-full" src=" images/Spring-Blender-Open-Movie-2020.jpg" alt="Spring short movie" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide w-full absolute">
+                                    <img  class="w-full h-full" src=" images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide w-full absolute">
+                                    <img class="w-full h-full" src=" images/Spring-Le-superb-OpenSource.jpg" alt="Spring short movie" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide w-full absolute">
+                                    <img class="w-full h-full" src=" images/Efoyta-doc-side.PNG" alt="Efoyta website doctor's view" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide w-full absolute">
+                                    <img  class="w-full h-full" src=" images/Efoyta-home-page.PNG" alt="Efoyta website home page" width="300" height="300">   
+                                </div>
+                                <div class="portfolio-main__slide w-full absolute">
+                                    <img  class="w-full h-full" src=" images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide w-full absolute">
+                                    <img  class="w-full h-full" src=" images/maze.jpg" alt="maze for micro-mouse" width="300" height="300">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-main__slider-button portfolio-main__slider-button--next absolute right-0 translate-x-5 top-1/2 translate-y-1/2 cursor-pointer">
+                            <img src="images/next.png" alt="next arrow image">
+                        </div>
+                        <div class="portfolio-main__slider-nav flex justify-center ">
+                            <button class="portfolio-main__slider-indicator w-5 h-5  rounded-full bg-black current-slide"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                        </div>
+                    </div>
+                </div>
+                <script src="js/script.js"></script>
             </section>
         </main>
-        <footer>
-            <hr>
-            <a href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
-            <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
-            <a href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
-            <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
-              <p>copyright &copy; all rights reserved.</p>
-              <address>
+        <script src="JS/script.js"></script>
+        <footer class="footer p-3 bg-black text-white text-1xl">
+            <div class="footer__back-to-top">
+                <a class="footer__back-to-top-link text-blue-700 hover:text-white" href="portfolio.html">back to top</a>
+            </div>
+            <div class="footer__contact flex  md:flex md:gap-12 md:justify-around flex-wrap  gap-6 items-center justify-between">
+              <div class="footer__contact-links  md:flex max-w-48 grid grid-cols-2 justify-around gap-7">
+                <a class="footer__contact-link" href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
+                <a class="footer__contact-link" href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
+                <a class="footer__contact-link" href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
+                <a class="footer__contact-link" href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
+              </div>
+      
+              <p>&copy; all rights reserved.</p>
+      
+              <address class="footer__contact-address leading-10">
                 Author: Kaleb Asratemedhin <br>
                 Address: Addis Ababa, Ethiopia <br>
                 Telephone: +251996304541 <br>
              </address>
-             <a href="portfolio.html">back to top</a>
-        </footer>
+            </div>
+            <script src="JS/script.js"></script>
+          </footer>
     </body>
 </html>

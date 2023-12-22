@@ -2,115 +2,158 @@
 <html lang = "en">
     <head>
         <meta lang="en-us" charset="utf-8">
-        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="css/output.css">
     </head>
     <body>
-        <header>
-            <img src="images/my_logo.PNG" alt="logo" width="50" height="50">
-          <nav>
-            <a href="blog.html">Blog</a>
-            <button class="menu-button"><img src="images/menu.png" alt="menu logo" width="30" height="30"></button>
-            <div class="menu-content">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>          
-                </ul>
+        <header class="bg-amber-600 flex justify-between items-center max-h-14 md:justify-around max-w-full">
+            <div>
+                <img class="header__logo ml-10  md:ml-0 rounded-full " src="images/my_logo.PNG" alt="logo" width="50" height="50">      
             </div>
-          </nav>
+            <nav class="header__nav flex  p-5 justify-between items-center relative min-w-0.5 md:m-w-48 md:max-w-64 md:justify-end">
+                <div>
+                    <a class=" hover:text-sky-700 text-white  font-bold" href="blog.html">Blog</a>
+                </div>
+                <div class="header__menu cursor-pointer relative flex justify-between pl-2 md:min-w-64">
+                    <div class="header__menu-hamburger  md:hidden block mr-10">
+                        <img class="header__menu-button-icon" src="images/menu.png" alt="menu logo" width="30" height="30">
+                    </div>
+                    <div class="header__menu-content md:relative md:bg-amber-600 md:w-2/3 bg-white md:block absolute top-9 md:top-0">
+                        <ul class="header__menu-content-list hidden md:flex  md:w-2/3 md:justify-between md:gap-8 leading-10 p-2 right-50">
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="index.html">Home</a></li>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="about.html">About</a></li>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="portfolio.html">Portfolio</a></li>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link text-black header__link md:min-w-12 hover:text-sky-700 " href="contact.html">Contact</a></li>          
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
-            <h1>My Blog Posts</h1>
-            <article id="nov10-2023">
-                <hgroup>
-                    <h2>A2SV Generative AI Hackathon Project Expo</h2>
-                    <p><time datetime="2023-11-10">Nov 10, 2023</time></p>
-                </hgroup>
-                <img src="images/A2sv-hackathon.jpg" alt="A2SV Generative AI hackaton competition" width="400" height="400">
-                <p>Total Chills! The day has come to join A2SVians at the Generative AI
-                Hackathon Project Expo on November 11th (9 am - 6 pm) and November
-                12th (9 am - 12 pm). This is a great chance to see innovation
-                first-hand at its best. Eight talented finalists teams from Morocco,
-                Kenya, Namibia, Ethiopia, and Cameroon showcase their digital
-                projects for Africa. 🌐
-                But that is not all! The A2SV Core Development Projects will also take center stage, offering a chance to see into the future of technology.🚀 These projects are more than just lines of code; they are life-changing solutions addressing real issues in African communities
-                
-            </article>
-            <article id="apr30-2020">
-                <hgroup>
-                    <h2>Check out our short blender animation - Spring</h2>
-                    <p><time datetime="2020-04-30">Apr 30, 2020</time></p>
-                </hgroup>
-                <video width="700" height="400" controls>
-                    <source src="other_resources/Spring-(Blender-Short-Animation)-Rescored-Soundtrack.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA">visit this link instead.</a>
-                </video>
-                <p> It took us, my friend Ben J. Lee and me, 20 days to make this using
-                    only blender. I hope you will like it. Spring is the story of a shepherd girl and her dog, who face ancient spirits in order to continue the cycle of life. This poetic and visually stunning short film was written and directed by Andy Goralczyk, inspired by his childhood in the mountains of Germany.
+        <main class="bg-orange-100 p-3">
+            <h1 class="text-4xl">My Blog Posts</h1>
+            <div class="blog-main__container md:grid md:grid-cols-2">     
+                <article id="nov10-2023" class="blog-main__article m-3 p-3 bg-white">
+                    <hgroup class="bg-yellow-200 px-3 my-3 ">
+                        <h2 class="text-3xl">A2SV Generative AI Hackathon Project Expo</h2>
+                        <p><time datetime="2023-11-10">Nov 10, 2023</time></p>
+                    </hgroup>
+                    <div class="blog-main__card grid max-h-full ">    
+                        <img src="images/A2sv-hackathon.jpg" alt="A2SV Generative AI hackaton competition" width="400" height="400">
+                        <div class="blog-main__card-content gap-4 m-3 ">
+                            <p>Total Chills! The day has come to join A2SVians at the Generative AI
+                            Hackathon Project Expo on November 11th (9 am - 6 pm) and November
+                            12th (9 am - 12 pm). This is a great chance to see innovation
+                            first-hand at its best. Eight talented finalists teams from Morocco,
+                            Kenya, Namibia, Ethiopia, and Cameroon showcase their digital
+                            projects for Africa. 🌐
+                            But that is not all! The A2SV Core Development Projects will also take center stage, offering a chance to see into the future of technology.🚀 These projects are more than just lines of code; they are life-changing solutions addressing real issues in African communities. </p>
+                        </div>
+                    </div>
                     
-                </p>
-            </article>
-            <article id="feb22-2020">
-                <hgroup>
-                    <h2>Teddy Afro Concert</h2>
-                    <p><time datetime="2020-02-22">Feb 22, 2020</time></p>
-                </hgroup>
-                
-                <img src="images/Teddy-Afro-Abebayehosh.jpg" alt="A picture of Teddy Afro" width="400" height="400"> <br>
-                <audio controls>
-                    <source src="other_resources/TEDDY-AFRO-Meskel-Square-Sembere(ሰምበሬ).m4a" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-                <p>Every body hands in the air!!! The beloved king of music, Teddy, is back on the stage! I
-                    feel like the whole country is in this stadium. Peace and chill out
-                    people! If you are not here today, you better have a good excuse. 
-                </p>
-                
-
-            </article>
-            
-            <article id = "dec5-2019">
-                <hgroup>
-                    <h2>2019 Japan halfsize micromouse 1 <sup>st</sup> prize- Fantom 2<sup>nd</sup> fastest run</h2>
-                    <p><time datetime="2019-12-05">Dec 5, 2019</time></p>
-                </hgroup>
-                <p>Check out this record on the 2019 Japan halfsize micromouse. It has recevied the 1st prize Fantom2nd fastest run for completing the maze in  7.654 seconds!! Impressive!!</p>
-                <iframe width="716" height="403" src="https://www.youtube.com/embed/kMOssi5IcP0" title="2019 Japan halfsize micromouse 1st prize- Fantom2nd fastest run, by 松井 祐樹" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </article>
-
-            <article id="nov7-2018">
-                <hgroup>
-                    <h2>Ethiopia-Hack Hackathon</h2>
-                    <p><time datetime="2018-11-07">Nov 7, 2018</time></p>
-                </hgroup>
-                <video width="700" height="400" controls>
-                    <source src="other_resources/Ethiopia-Hack-Hackathon-promo-by-GDG-Addis.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    <a href="https://m.youtube.com/watch?v=qez0y-Ed2oU">visit this link instead.</a>
-                </video>
-                
-                <p>For all Ethiopian tech enthusiasts and programmers, <abbr title="Google Developers Group">GDG</abbr> Addis has organized 12 consecutive Hackathon programs in Addis Ababa, Bahir Dar, Jimma and Dire Dawa funded by U.S. Embassy in Ethiopia and <abbr title="United States Agency for International Development">USAID</abbr>. "Ethiopia Hack" v1.0 will take place from Nov 16 to 18 , 2018 at American Center. It is themed "Build for digital wellbeing". In each hackathon program, 10 teams (each with 5 members) will compete to design, build, collaborate and win. Winners ranked from 1st to 3rd will be awarded big prizes.
-                Interested people can <a href="https://goo.gl/HEa1i6">register here</a>.</p>
+                </article>
+                <article id="apr30-2020" class="blog-main__article m-3 p-3 bg-white">
+                    <hgroup class="bg-yellow-200 px-3 my-3" >
+                        <h2 class="text-3xl">Check out our short blender animation - Spring</h2>
+                        <p><time datetime="2020-04-30">Apr 30, 2020</time></p>
+                    </hgroup>
+                    <div class="blog-main__card grid max-h-full">
+                        <video width="700" controls>
+                            <source src="other_resources/Spring-(Blender-Short-Animation)-Rescored-Soundtrack.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA">visit this link instead.</a>
+                        </video>
+                        <div class="blog-main__card-content">
+                            <p> It took us, my friend Ben J. Lee and me, 20 days to make this using
+                                only blender. I hope you will like it. Spring is the story of a shepherd girl and her dog, who face ancient spirits in order to continue the cycle of life. This poetic and visually stunning short film was written and directed by Andy Goralczyk, inspired by his childhood in the mountains of Germany.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="feb22-2020" class="blog-main__article m-3 p-3 bg-white">
+                    <hgroup class="bg-yellow-200 px-3 my-3 ">
+                        <h2 class="text-3xl">Teddy Afro Concert</h2>
+                        <p><time datetime="2020-02-22">Feb 22, 2020</time></p>
+                    </hgroup>
                     
-                <p>You can register as an individual or as a team of 5 members. For Individuals, we will let to form a team one week a head of the hackathon. We target participants with age between 18 to 25. Women are highly appreciated to participate. Minimum coding experience is required. There will be a one-day pre-hack training before 1 week a head of each hackathon program.</p>           
+                    <div class="blog-main__card grid max-h-full">
+                        <div class="blog-main__card-intro">
+                            <img class="w-3/4 md:w-full" src="images/Teddy-Afro-Abebayehosh.jpg" alt="A picture of Teddy Afro" width="400" height="400"> <br>
+                            <audio class="w-3/4 md:w-full" id="player" controls>
+                                <source src="other_resources/TEDDY-AFRO-Meskel-Square-Sembere(ሰምበሬ).m4a" type="audio/mp3">
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </div>
+                        <div class="blog-main__card-content">
+                            <p>Every body hands in the air!!! The beloved king of music, Teddy, is back on the stage! I
+                                feel like the whole country is in this stadium. Peace and chill out
+                                people! If you are not here today, you better have a good excuse. 
+                            </p>
+                        </div>
+                    <!-- </div>
+                    
+                    npx tailwindcss -i input.css -o src\css\output.css --watch -->
+                </article>
+                
+                <article id = "dec5-2019" class="blog-main__article m-3 p-3 bg-white">
+                    <hgroup class="bg-yellow-200 px-3 my-3 ">
+                        <h2 class="text-3xl">2019 Japan halfsize micromouse 1 <sup>st</sup> prize- Fantom 2<sup>nd</sup> fastest run</h2>
+                        <p><time datetime="2019-12-05">Dec 5, 2019</time></p>
+                    </hgroup>
+                    <div class="blog-main__card grid  ">
+                        <iframe class="w-3/4  md:w-full  " width="716" height="403" src="https://www.youtube.com/embed/kMOssi5IcP0" title="2019 Japan halfsize micromouse 1st prize- Fantom2nd fastest run, by 松井 祐樹" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="blog-main__card-content">
+                            <p>Check out this record on the 2019 Japan halfsize micromouse. It has recevied the 1st prize Fantom2nd fastest run for completing the maze in  7.654 seconds!! Impressive!!</p>
+                        </div>
+                    </div>
+                    
+                </article>
+
+                <article id="nov7-2018" class="blog-main__article m-3 p-3 bg-white">
+                    <hgroup class="bg-yellow-200 px-3 my-3">
+                        <h2 class="text-3xl">Ethiopia-Hack Hackathon</h2>
+                        <p><time datetime="2018-11-07">Nov 7, 2018</time></p>
+                    </hgroup>
+                    <div class="blog-main__card">
+                        <video width="700"  controls>
+                            <source src="other_resources/Ethiopia-Hack-Hackathon-promo-by-GDG-Addis.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            <a href="https://m.youtube.com/watch?v=qez0y-Ed2oU">visit this link instead.</a>
+                        </video>
+                        
+                        <div class="blog-main__card-content">
+                            <p>For all Ethiopian tech enthusiasts and programmers, <abbr title="Google Developers Group">GDG</abbr> Addis has organized 12 consecutive Hackathon programs in Addis Ababa, Bahir Dar, Jimma and Dire Dawa funded by U.S. Embassy in Ethiopia and <abbr title="United States Agency for International Development">USAID</abbr>. "Ethiopia Hack" v1.0 will take place from Nov 16 to 18 , 2018 at American Center. It is themed "Build for digital wellbeing". In each hackathon program, 10 teams (each with 5 members) will compete to design, build, collaborate and win. Winners ranked from 1st to 3rd will be awarded big prizes.Interested people can <a href="https://goo.gl/HEa1i6">register here</a>.</p> 
+                            <p>You can register as an individual or as a team of 5 members. For Individuals, we will let to form a team one week a head of the hackathon. We target participants with age between 18 to 25. Women are highly appreciated to participate. Minimum coding experience is required. There will be a one-day pre-hack training before 1 week a head of each hackathon program.</p>    
+                        </div>       
+                    </div>
+                
+                </article>
+            </div>
             
-            </article>
         </main>
-        <footer>
-            <hr>
-            <a href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
-            <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
-            <a href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
-            <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
-              <p>copyright &copy; all rights reserved.</p>
-              <address>
+           
+        <footer class="footer p-3 bg-black text-white text-1xl">
+            <div class="footer__back-to-top">
+                <a class="footer__back-to-top-link text-blue-700 hover:text-white" href="blog.html">back to top</a>
+            </div>
+            <div class="footer__contact flex  md:flex md:gap-12 md:justify-around flex-wrap  gap-6 items-center justify-between">
+              <div class="footer__contact-links  md:flex max-w-48 grid grid-cols-2 justify-around gap-7">
+                <a class="footer__contact-link" href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
+                <a class="footer__contact-link" href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
+                <a class="footer__contact-link" href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
+                <a class="footer__contact-link" href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
+              </div>
+      
+              <p>&copy; all rights reserved.</p>
+      
+              <address class="footer__contact-address leading-10">
                 Author: Kaleb Asratemedhin <br>
                 Address: Addis Ababa, Ethiopia <br>
                 Telephone: +251996304541 <br>
              </address>
-             <a href="blog.html">back to top</a>
-        </footer>
+            </div>
+            <script src="JS/script.js"></script>
+          </footer>
     </body>
 </html>
